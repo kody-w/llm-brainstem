@@ -1,0 +1,17 @@
+[project]
+name = "llm-brainstem"
+version = "0.1.0"
+description = "Your RAPP Brainstem, agents included, as a model in the llm CLI"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = ["llm>=0.19"]
+[project.urls]
+Homepage = "https://github.com/kody-w/llm-brainstem"
+[project.entry-points.llm]
+brainstem = "llm_brainstem"
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools]
+py-modules = ["llm_brainstem"]
